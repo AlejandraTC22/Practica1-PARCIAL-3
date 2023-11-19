@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Catálogo de la Biblioteca</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Catálogo de la Biblioteca</h1>
+
+        <label for="isbnInput">ISBN:</label>
+        <input type="number" id="isbnInput">
+
+        <label for="titleInput">Título del libro:</label>
+        <input type="text" id="titleInput">
+
+        <button id="agregarLibroBtn" onclick="agregarLibro()">Agregar Libro</button>
+        <button id="buscarLibroBtn" onclick="buscarLibro()">Buscar</button>
+        <button id="eliminarLibroBtn" onclick="eliminarLibro()">Eliminar Libro</button>        
+        <div id="catalogOutput"></div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
